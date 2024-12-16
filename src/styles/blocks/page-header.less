@@ -9,16 +9,13 @@
     background-color: rgba(222, 222, 222, 0.5);
     backdrop-filter: blur(20px);
     z-index: 100;
+    @supports(backdrop-filter: blur(20px)){}
 
     &__container{
-        box-sizing: border-box;
+        .container;
         display: flex;
         align-items: center;
-        width: 100%;
-        max-width: 1414px;
-        margin: 0 auto;
-        padding-left: 40px;
-        padding-right: 40px;
+        justify-content: space-between;
     }
     &__logo{
         flex-shrink: 0;
